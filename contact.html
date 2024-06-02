@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Coaching Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Soccer Talent Scouting</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="players.html">Players</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1>Soccer Coaching Registration</h1>
+        <p>Sign up for our soccer coaching program.</p>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Nama:</label>
+                <input type="text" class="form-control" id="name" name="Nama" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Umur:</label>
+                <input type="number" class="form-control" id="age" name="Umur" required>
+            </div>
+            <div class="form-group">
+                <label for="position">Posisi Bermain:</label>
+                <input type="text" class="form-control" id="position" name="Posisi" required>
+            </div>
+            <div class="form-group">
+                <label for="experience">Pengalaman Bermain (Tahun):</label>
+                <input type="number" class="form-control" id="experience" name="Pengalaman" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+            <p>&copy; 2024 Soccer Talent Scouting. All rights reserved.</p>
+            <p>Contact us: info@soccertalentscouting.com</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $('#registrationForm').on('submit', function(event) {
+            event.preventDefault();
+            const name = $('#name').val();
+            const email = $('#email').val();
+            const age = $('#age').val();
+            const position = $('#position').val();
+            const experience = $('#experience').val();
+            alert(`Name: ${name}\nEmail: ${email}\nAge: ${age}\nPreferred Position: ${position}\nPlaying Experience: ${experience} years`);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+/* General styling */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation bar */
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    color: #910808;
+    padding: 1rem 1.5rem;
+  }
+  
+  .nav-link:hover {
+    background-color: #eee;
+  }
+  
+  .active .nav-link {
+    background-color: #eee;
+  }
+  
+  /* Hero section */
+  .container {
+    max-width: 800px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    text-align: center;
+    line-height: 1.5;
+  }
+
+.carousel {
+    margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Set the background color and opacity for the caption */
+    padding: 10px; /* Add padding to the caption */
+    color: white; /* Set the text color */
+}
+
+.carousel-indicators {
+    bottom: 10px; /* Position the indicators at the bottom */
+}
+
+.carousel-indicators li {
+    background-color: #777; /* Set the color of the indicators */
+}
+
+.carousel-indicators .active {
+    background-color: #333; /* Set the color of the active indicator */
+}
+/* Custom CSS for carousel */
+.carousel-item img {
+    max-width: 50%; /* Set maximum width for the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is displayed as a block element */
+}
+
+
+  
+  /* Footer */
+  footer {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: flex;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    transition: left 0.5s;
+}
+
+  /* In your style.css file */
+
+.container {
+    background-image: url("path/to/your/image.jpg"); /* Replace with the path to your image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0; /* Add some padding to avoid content overlapping the image */
+  }
+
+  /* In your style.css file */
+
+.card {
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Add a hover effect */
+  }
+  
+  .card:hover {
+    transform: scale(1.02); /* Enlarge the card slightly on hover */
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px; /* Match the border radius of the card */
+    border-top-right-radius: 10px; /* Match the border radius of the card */
+  }
+  
+  .card-body {
+    padding: 20px; /* Adjust padding as needed */
+  }
+
+  /* In your style.css file */
+
+h1 {
+    font-family: 'Roboto', sans-serif; /* Example font, choose one you like */
+    font-weight: bold;
+    font-size: 2rem; /* Adjust font size as needed */
+    color: #212529; /* Adjust color as needed */
+  }
+  
+  .card-title {
+    font-family: 'Open Sans', sans-serif; /* Example font, choose one you like */
+    font-weight: bold;
+    color: #343a40; /* Adjust color as needed */
+  }
+  
+  .card-text {
+    font-family: 'Lato', sans-serif; /* Example font, choose one you like */
+    color: #70798c; /* Adjust color as needed */
+  }
+
+  /* In your style.css file */
+
+.navbar-light .navbar-nav .nav-link {
+    color: #840909; /* Text color for navbar links */
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #0f2e71; /* Text hover color for navbar links */
+  }
+  
+  .nav-item.active .nav-link {
+    font-weight: bold; /* Bold the active navigation link */
+  }
+  
+  .event {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.event img {
+    width: 100%;
+    height: auto;
+}
+
+.event-details {
+    padding: 20px;
+}
+
+.event-details h2 {
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.event-details p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.event-details p strong {
+    color: #343a40;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
